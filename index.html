@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physical Object Animation</title>
-    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="script2.js" defer></script>
     <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .physicsContainer {
+            position: relative;
+            width:100vw;
+            height:100vh;
+            padding: 0em;
+            padding-top: 0;
             overflow: hidden;
+
+        }
+
+        .textContainer {
+            width: 40em;
+        }
+
+        p {
+            margin:0;
+            position:relative;
+        }
+
+        .item {
+            display: inline-block;
+            position: absolute;
+            pointer-events: none;
+            opacity: 1;
         }
     </style>
 </head>
 <body>
+    <div class="physicsContainer">
+        <div class="textContainer">
+            <p>This is a paragraph.</p>
+            
+        </div>
+    </div>
 
 </body>
 </html>

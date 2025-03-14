@@ -1,1 +1,6 @@
-Init
+create list of objects
+
+render a frame
+    move text 
+
+    recalculate object attributes
